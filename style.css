@@ -56,21 +56,19 @@ button{
     cursor:pointer;
 }
 
-/* KHU VỰC ĐÃ SỬA: Căn chỉnh 2 ô chọn cân đối chính giữa */
 .buttons{
     margin:30px 0;
     display:flex;
-    justify-content:center; /* Căn đều các nút ra giữa theo chiều ngang */
-    align-items:center;     /* Căn giữa các nút theo chiều dọc */
-    gap:20px;               /* Tạo khoảng cách đều 20px giữa 2 nút */
+    justify-content:center;
+    gap:20px;
     position:relative;
-    height:60px;            /* Khống chế chiều cao vừa vặn cho khu vực nút */
+    height:100px;
 }
 
-/* KHU VỰC ĐÃ SỬA: Để nút KHÔNG đứng cân đối ban đầu, chỉ absolute khi nhảy trốn */
 #noBtn{
-    position: absolute;
-    /* Loại bỏ thuộc tính left cố định ban đầu để Flexbox tự căn giữa */
+    position:absolute;
+    left:220px;
+    top:0;
     transition: left .25s ease, top .25s ease, transform .25s ease;
 }
 
